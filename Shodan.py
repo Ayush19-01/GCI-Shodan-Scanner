@@ -28,7 +28,6 @@ def shodansearch():
 			host1=i['hostnames'][0]
 		else:
 			host1=" "
-		print()
 		info+='{:28}{:18}{:65}{} \n'.format(prRed(str(i['ip_str'])),prGreen(str(i['port'])),prCyan(str(i['isp'])),prPurple(str(host1)))
 	print(info)
 def hostscan():
