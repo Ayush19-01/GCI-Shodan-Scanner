@@ -6,12 +6,13 @@ ___Attack 1) IP Address:___
 ![alt text](https://github.com/Ayush19-01/GCI-Shodan-Scanner/blob/master/resources/Screenshot%20from%202019-12-20%2018-04-26.png)
 
 _Code snippet used:_
-
-    def getip():
-        print()
-        r=requests.get("https://ifconfig.me/ip")
-        print("Your Ip Address :"+" "+ r.text)
-        print()
+```
+def getip():
+    print()
+    r=requests.get("https://ifconfig.me/ip")
+    print("Your Ip Address :"+" "+ r.text)
+    print()
+```    
 ___Attack 2) Shodan Search to scan IPs, Hostnames, ports :___
 
 ![alt text](https://github.com/Ayush19-01/GCI-Shodan-Scanner/blob/master/resources/Screenshot%20from%202019-12-20%2018-20-48.png)
@@ -37,21 +38,21 @@ ___Attack 3) Scanning a specific Host :___
 
 _Code snippet used:_
         
-        def hostscan():
-	        os.system('clear')
-	        ip1=input('Enter domain:')
-	        print(prYellow(ip1))
-	        ip2=socket.gethostbyname(ip1)
-	        r=api.host(ip2)
-	        output='Hostnames:              '
-	        for i in r['hostnames']:
-	        	output += (i + " " +"\n")
-	        output +='City:                    {}\nCountry:                 {}\nOrganization:            {} \nNumber of open ports:    {} \nPorts:'.format(r['city'], r['country_name'], r['org'], len(r['ports']))
-	        for j in r['data']:
-	        	if 'product' in i:
-		        	p=str(j['product'])
-	        	else:
-			        p=" "
-		        output+="                   "+str(j['port'])+"   "
-	        print(output)
+    def hostscan():
+	    os.system('clear')
+	    ip1=input('Enter domain:')
+	    print(prYellow(ip1))
+	    ip2=socket.gethostbyname(ip1)
+	    r=api.host(ip2)
+	    output='Hostnames:              '
+	    for i in r['hostnames']:
+	        output += (i + " " +"\n")
+	    output +='City:                    {}\nCountry:                 {}\nOrganization:            {} \nNumber of open ports:    {} \nPorts:'.format(r['city'], r['country_name'], r['org'], len(r['ports']))
+	    for j in r['data']:
+	        if 'product' in i:
+		    p=str(j['product'])
+	        else:
+		    p=" "
+		output+="                   "+str(j['port'])+"   "
+	    print(output)
 ## Made for GCI 2019 by Ayush19
