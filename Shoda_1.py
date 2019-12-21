@@ -1,5 +1,3 @@
-#Made for the sole purpose og GCI 2019
-import pydoc
 import shodan
 import requests
 import os
