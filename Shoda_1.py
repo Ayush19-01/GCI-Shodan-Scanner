@@ -9,7 +9,7 @@ def prLightPurple(skk): return str("\033[94m {}\033[00m" .format(skk))
 def prPurple(skk): return str("\033[95m {}\033[00m" .format(skk)) 
 def prCyan(skk): return str("\033[96m {}\033[00m" .format(skk)) 
 print("Welcome to the Shodan Scanner")
-key='p01uPcafWSzzcIJeeZFRhUwVsN4OaNIz'
+key=""    #Enter your shodan API key before running this file
 api=shodan.Shodan(key)
 def getip():
     print()
