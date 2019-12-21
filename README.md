@@ -1,6 +1,6 @@
 # GCI-Shodan-Scanner
 ### Documentation of Shodan Scanner attacks
-___Modules used: Shodan, OS, Requests, Socket___
+_Modules used: Shodan, OS, Requests, Socket_
 
 ___Attack 1) IP Address:___
 
