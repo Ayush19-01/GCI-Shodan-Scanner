@@ -1,5 +1,6 @@
 # GCI-Shodan-Scanner
-Documentation of Shodan Scanner attacks
+### Documentation of Shodan Scanner attacks
+___Modules used: Shodan, OS, Requests, Socket___
 
 ___Attack 1) IP Address:___
 
@@ -55,4 +56,4 @@ _Code snippet used:_
 		    p=" "
 		output+="                   "+str(j['port'])+"   "
 	    print(output)
-## Made for GCI 2019 by Ayush19
+## Documentation by Ayush19
